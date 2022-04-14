@@ -9037,7 +9037,7 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
 photo = "https://t.me/xx_pxx/890"
 local T =[[
-ٴ•━━━━━━𝘽,𝙍,𝘼━━━━━━━•ٴ 
+• مطور السورس @oooUo
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -9046,11 +9046,11 @@ keyboard.inline_keyboard = {
 {text = '𝗗𝗲𝗩', url = "https://t.me/oooUo"}
 },
 {
-{text = ' 𝘀𝗼𝘂𝗿𝗿𝗰', url = "https://t.me/JJJJDJ"}
+{text = ' • قناة السورس', url = "https://t.me/JJJJDJ"}
 },
 }
 local msgg = msg_id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&text=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'الاوامر' then
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*⌔︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
